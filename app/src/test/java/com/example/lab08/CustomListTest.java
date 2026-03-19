@@ -22,4 +22,19 @@ public class CustomListTest {
         list.deleteCity(pindi);
         assertTrue(!list.hasCity((pindi)));
     }
+
+    public int testCountCities() {
+        CustomList list = new CustomList();
+        City lahore = new City("Lahore", "Punjab");
+        City pindi = new City("Pindi", "Punjab");
+        City multan = new City("Multan", "Punjab");
+        City karanchi = new City("Karanchi", "Sindh");
+
+        list.addCity(lahore);
+        list.addCity(pindi);
+        list.addCity(multan);
+        list.addCity(karanchi);
+
+        assert(list.countCities() == 4);
+    }
 }
