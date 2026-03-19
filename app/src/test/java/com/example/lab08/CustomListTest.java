@@ -23,7 +23,7 @@ public class CustomListTest {
         assertTrue(!list.hasCity((pindi)));
     }
 
-    public int testCountCities() {
+    public void testCountCities() {
         CustomList list = new CustomList();
         City lahore = new City("Lahore", "Punjab");
         City pindi = new City("Pindi", "Punjab");
